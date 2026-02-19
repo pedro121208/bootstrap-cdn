@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papillon - Guia de Natureza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --butterfly-orange: #ff8c00;
+            --butterfly-purple: #8a2be2;
+        }
+
+        body {
+            background-color: #fdf6ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 1. Navbar Estilizada */
+        .navbar {
+            background: rgba(255, 255, 255, 0.8) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--butterfly-purple);
+        }
+
+        /* 2. Seção Hero (Responsiva) */
+        .hero-butterflies {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            padding: 80px 0;
+            border-radius: 0 0 50px 50px;
+            text-align: center;
+        }
+
+        /* 3. Botão de Download Customizado */
+        .btn-butterfly {
+            background: linear-gradient(45deg, var(--butterfly-orange), #ff4500);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-butterfly:hover {
+            transform: scale(1.1) rotate(-2deg);
+            box-shadow: 0 15px 25px rgba(255, 140, 0, 0.5);
+            color: white;
+        }
+
+        /* Cards Responsivos */
+        .butterfly-card {
+            border: none;
+            border-radius: 20px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .butterfly-card:hover {
+            border-left: 5px solid var(--butterfly-purple);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" style="color: var(--butterfly-purple);">🦋 PAPILLON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Espécies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ciclo de Vida</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-primary" href="#">Download App</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-butterflies shadow">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Descubra as Cores do Ar</h1>
+            <p class="lead mb-5 px-3">Baixe o maior guia digital de borboletas do mundo e identifique espécies com sua câmera.</p>
+            
+            <a href="#" class="btn-butterfly">
+                Baixar Guia PDF (Grátis)
+            </a>
+            
+            <p class="mt-4 text-muted"><small>Disponível também para iOS e Android</small></p>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card butterfly-card shadow-sm h-100 p-4">
+                    <h4 class="text-primary">Monarcas</h4>
+                    <p>Saiba tudo sobre a incrível migração anual dessas borboletas laranjas.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card butterfly-card shadow-sm h-100 p-4">
+                    <h4 class="text-success">Preservação</h4>
+                    <p>Dicas de como criar um jardim que atrai e protege polinizadores.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card butterfly-card shadow-sm h-100 p-4">
+                    <h4 class="text-warning">Fotografia</h4>
+                    <p>Técnicas para capturar a beleza desses insetos em movimento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">© 2026 Projeto Papillon - Preservando a Natureza</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
